@@ -1,0 +1,21 @@
+*{
+    /*reset*/
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    /*colors*/
+    --prymary-color:#69B99D;
+    --secondary-color:#CCF4E6;
+    --gradient:linear-gradient(270deg, #69B99D 0%, rgba(204, 244, 230, 0.34) 100%);
+    --dark:#0F241D;
+    --gray:#767676;
+    --ligth-gray:#E4E4E4;
+    --background-1:#F9F9F9;
+    --background-2:#FFFFFF;
+
+    font-size: 62.5%;
+    
+}
