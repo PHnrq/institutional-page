@@ -28,6 +28,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background-color: var(--background-1);
 }
 
 .menu{
@@ -53,20 +55,24 @@ header{
     background-color: var(--ligth-gray);
 }
 
-main{
-    padding-block: 2.3rem;
+
+#home{
+    padding-block-start: 8.4rem;
+    padding-block-end: 17.1rem;
     padding-inline: 12.3rem;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: var(--background-1);
 }
 
 .main-txt{
     margin-inline-end: 7rem;
 }
 
-.main-txt h2{
+.title{
     color: var(--dark);
 
     font-family: 'Poppins', sans-serif;
@@ -74,7 +80,7 @@ main{
     font-weight: 700;
 }
 
-.main-txt p{
+.descripition{
     color: var(--gray);
 
     font-family: 'DM Sans', sans-serif;
@@ -98,6 +104,24 @@ main{
 .agendar:hover{
     opacity: 75%;
     transition: 5ms;
+}
+
+.sobre{
+    padding-block: 16rem;
+    padding-inline-end: 12.1rem;
+
+    background-color: var(--background-2);
+
+    display: flex;
+    align-items: center;
+}
+
+.sobre-img{
+    margin-inline-end: 6.4rem;
+}
+
+.sobre .descripition{
+    font-size: 1.6rem;
 }
 
 footer{
