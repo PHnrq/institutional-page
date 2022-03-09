@@ -1,3 +1,11 @@
+*{
+    --dark: hsla(159, 41%, 10%, 1);
+    --primary-color: hsla(159, 36%, 57%, 1);
+    --secondary-color: hsla(159, 65%, 88%, 1);
+    --first-bg: hsla(0, 0%, 98%, 1);
+    --second-bg:  hsla(0, 0%, 100%, 1);
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
