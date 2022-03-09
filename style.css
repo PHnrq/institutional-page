@@ -4,6 +4,7 @@
     --secondary-color: hsla(159, 65%, 88%, 1);
     --first-bg: hsla(0, 0%, 98%, 1);
     --second-bg:  hsla(0, 0%, 100%, 1);
+    --light-grey: hsla(0, 0%, 89%, 1);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -47,4 +48,21 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+header{
+    padding: 2rem 2.4rem;
+    box-sizing: content-box;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.logo-menuBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: none;
 }
