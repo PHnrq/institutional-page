@@ -36,6 +36,8 @@ header nav{
   align-items: center;
   justify-content: center;
   gap: 6.4rem;
+
+  display: none;
 }
 
 header nav a{
@@ -122,4 +124,19 @@ header nav a{
   text-align: center;
 
   color: #F9F9F9;
+}
+
+.about-us{
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.aboutUs-txt{
+    padding: 0 2.4rem;
+}
+
+.aboutUs-txt .subtitle, .aboutUs-txt .title{
+    text-align:start;
 }
