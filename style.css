@@ -225,3 +225,34 @@ header nav a{
   align-items: center;
   gap: .8rem;
 }
+
+.contact{
+  padding: 8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+
+  background: var(--first-bg);
+}
+
+.contacts-txt, .contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts{
+  gap: 3.2rem;
+}
+
+.contacts-txt .title, .contacts-txt .subtitle{
+  text-align: start;
+}
+
+.contacts-txt .subtitle{
+  margin: 1.6rem 0 3.2rem;
+}
+
+.contact .btn-primary img{
+  margin-inline-end: 1rem;
+}
