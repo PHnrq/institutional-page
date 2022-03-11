@@ -1,29 +1,29 @@
 *{
-    --dark: hsla(159, 41%, 10%, 1);
-    --primary-color: hsla(159, 36%, 57%, 1);
-    --secondary-color: hsla(159, 65%, 88%, 1);
-    --first-bg: hsla(0, 0%, 98%, 1);
-    --second-bg:  hsla(0, 0%, 100%, 1);
-    --light-grey: hsla(0, 0%, 89%, 1);
-    --gray: #767676;
+  --dark: hsla(159, 41%, 10%, 1);
+  --primary-color: hsla(159, 36%, 57%, 1);
+  --secondary-color: hsla(159, 65%, 88%, 1);
+  --first-bg: hsla(0, 0%, 98%, 1);
+  --second-bg:  hsla(0, 0%, 100%, 1);
+  --light-grey: hsla(0, 0%, 89%, 1);
+  --gray: #767676;
 
-    margin: 0;
+  margin: 0;
 	padding: 0;
 	border: 0;
 	font: inherit;
 	font-size: 62.5%;
 	vertical-align: baseline;
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 
-    /*font-family: 'DM Sans', sans-serif;
-      font-family: 'Poppins', sans-serif;*/
+  /*font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;*/
 }
 
 header{
-    box-sizing: content-box;
-    border-bottom: 1px solid var(--light-grey);
-    background: var(--first-bg);
+  box-sizing: content-box;
+  border-bottom: 1px solid var(--light-grey);
+  background: var(--first-bg);
 }
 
 header nav{
@@ -50,35 +50,35 @@ header nav a{
 }
 
 .logo-menuBtn{
-    padding: 2rem 2.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home{
-    padding: 3.2rem 0rem 8rem;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 3.2rem;
+  padding: 3.2rem 0rem 8rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3.2rem;
 
-    background: var(--first-bg);
-    border-bottom: 1px solid var(--light-grey);
+  background: var(--first-bg);
+  border-bottom: 1px solid var(--light-grey);
 }
 
 .home-img, .aboutUs-img{
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  flex: 1;
 }
 
 .home-txt{
-    flex: 1;
-    padding: 0rem 2.4rem;
+  flex: 1;
+  padding: 0rem 2.4rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title{
@@ -126,17 +126,73 @@ header nav a{
   color: #F9F9F9;
 }
 
+.divider, .divider-invert{
+  height: 1px;
+  background: linear-gradient(270deg, #69B99D 0%, rgba(204, 244, 230, 0.34) 100%);
+}
+
+.divider-invert{
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .about-us{
-    padding: 8rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  background: var(--second-bg);
 }
 
 .aboutUs-txt{
-    padding: 0 2.4rem;
+  padding: 0 2.4rem;
 }
 
-.aboutUs-txt .subtitle, .aboutUs-txt .title{
-    text-align:start;
+.aboutUs-txt .subtitle, .aboutUs-txt .title, .services-txt .subtitle, .services-txt .title{
+  text-align:start;
+}
+
+.services{
+  padding: 8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.services-txt .subtitle{
+  font-family: 'DM Sans';
+  color: var(--dark);
+  margin-block-start: 1.6rem;
+}
+
+.services-txt span{
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--primary-color);
+}
+
+.services-box-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.services-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.8rem 3.2rem;
+  
+  background: var(--first-bg);
+
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+}
+
+.services-box img{
+  width: 80px;
+  height: 80px;
+}
+
+.services-box .title{
+  margin: 2.4rem 0 1.2rem;
 }
