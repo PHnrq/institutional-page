@@ -196,3 +196,32 @@ header nav a{
 .services-box .title{
   margin: 2.4rem 0 1.2rem;
 }
+
+.testimonials{
+  padding: 8rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  background: var(--second-bg);
+}
+
+.testimonial{
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
+.testimonial .subtitle:not(.client .subtitle){
+  text-align: start;
+  color: var(--dark);
+}
+
+.client{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
