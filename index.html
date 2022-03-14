@@ -12,13 +12,17 @@
 </head>
 <body>
     <header>
-        <div class="logo-menuBtn">
-            <a href="#"><img src="./res/img/logo.svg" alt="beatysalon"></a>
-            <button>
-                <img src="./res/img/menu-Icon.svg" alt="Menu">
-            </button>
+        <div class="logo-menuBtn" id="logoMenuBtn">
+            <a href="#" 
+            id="logo" 
+            style="display: flex;"><img src="./res/img/logo.svg" alt="beatysalon"></a>
+            <div 
+            onclick="showMenu()"
+            id="showMenuImg"
+            class="showMenuImg"
+            ></div>
         </div>
-        <nav>
+        <nav id="nav" style="display: none;">
             <a href="#">Início</a>
             <a href="#">Sobre</a>
             <a href="#">Serviços</a>
@@ -147,5 +151,7 @@
             <a href="#"><img src="./res/img/youtube-logo.svg" alt="youtube"></a>
         </div>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
