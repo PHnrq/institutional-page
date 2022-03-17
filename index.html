@@ -1,117 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
     <link rel="stylesheet" href="style.css">
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <title>Beauty Salon</title>
+    <!--Title-->
+    <title>BeautySalon</title>
 </head>
+
 <body>
+    <!--Header-->
     <header>
         <div class="logo-menuBtn" id="logoMenuBtn">
-            <a href="#" 
-            id="logo" 
-            style="display: flex;"><img src="./res/img/logo.svg" alt="beatysalon"></a>
-            <div 
-            onclick="showMenu()"
-            id="showMenuImg"
-            class="showMenuImg"
-            ></div>
+            <a href="#" id="logo" style="display: flex;"><img src="./res/img/logo.svg" alt="Logo da Beautysalon (Beauty na cor preta e Salon na cor verde)"></a>
+            <div onclick="showMenu()" id="showMenuImg" class="showMenuImg"></div>
         </div>
         <nav id="nav" style="display: none;">
-            <a href="#">Início</a>
+            <a href="home">Início</a>
             <a href="#">Sobre</a>
             <a href="#">Serviços</a>
             <a href="#">Depoimentos</a>
             <a href="#">Contato</a>
         </nav>
     </header>
+    <!--Main-->
     <main>
-      <section class="home">
-        <div class="home-txt">
-          <h2 class="title">
-            Saúde natural para os seus cabelos
-          </h2>
-          <p class="subtitle">
-            Um salão exclusivo em São Paulo, especializado em tratamentos naturais.
-          </p>
-          <button class="btn-primary">
-            Agendar um  horário
-          </button>
-          </div>
-          <img class="home-img" src="./res/img/home-img.png" alt="Cabelereira">
-      </section>
-      <div class="divider"></div>
-      <section class="about-us">
-          <img class="aboutUs-img" src="./res/img/sobre-img.png" alt="Cabelereiras">
-          <div class="aboutUs-txt">
-            <h2 class="title">
-              Sobre nós
-            </h2>
-            <p class="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus. 
-              <br><br>
-              In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue vulputate sapien, vitae feugiat enim augue sed. 
-              <br><br>
-              Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.
-              </p>
-          </div>
-      </section>
-      <div class="divider-invert"></div>
-      <section class="services">
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-txt">
+                <h2 class="title">
+                    Saúde natural para os seus cabelos
+                </h2>
+                <p class="subtitle">
+                    Um salão exclusivo em São Paulo, especializado em tratamentos naturais.
+                </p>
+                <a href="#" class="btn-primary" target="_blank">
+                    Agendar um horário
+                </a>
+            </div>
+            <img class="home-img" src="./res/img/home-img.png" alt="Cabelereira segurando um secador de cabelo e um pente esta dando escova no cabelo de uma cliente">
+        </section>
+
+        <div class="divider"></div>
+        <!--About-->
+        <section class="about-us">
+            <img class="aboutUs-img" src="./res/img/sobre-img.png" alt="Tres Cabelereiras sorrindo, a da esquerda segurando uma escova com as mãos acima da cabeça, a do meio segurando uma tesoura em frente aos olhos, e a da direita segurando um pente e uma escova">
+            <div class="aboutUs-txt">
+                <h2 class="title">
+                    Sobre nós
+                </h2>
+                <p class="subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus,
+                    id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies
+                    pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus.
+                    <br><br>
+                    In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui.
+                    Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue
+                    vulputate sapien, vitae feugiat enim augue sed.
+                    <br><br>
+                    Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod
+                    dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat
+                    feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui
+                    at sem ullamcorper luctus.
+                </p>
+            </div>
+        </section>
+
+        <div class="divider-invert"></div>
+        <!--Services-->
+        <section class="services">
             <div class="services-txt">
                 <h2 class="title">
                     Serviços
                 </h2>
                 <p class="subtitle">
-                    Com mais de 10 anos no mercado, o <span>Beautysalon</span> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais
+                    Com mais de 10 anos no mercado, o <span class="beautysalon-span">Beautysalon</span> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais.
                 </p>
             </div>
             <div class="services-box-wrapper">
                 <div class="services-box">
-                    <img src="./res/img/therapy-icon.svg" alt="Mulher com rolinhos na cabeça">
+                    <img src="./res/img/therapy-icon.svg" alt="Ilustração de uma mulher com rolinhos de cabelo">
                     <h3 class="title">Terapia capilar</h3>
                     <p class="subtitle">
-                        Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.
+                        Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os
+                        longos e finos.
                     </p>
                 </div>
                 <div class="services-box">
-                    <img src="./res/img/cut-icon.svg" alt="tesoura">
+                    <img src="./res/img/cut-icon.svg" alt="Ilustração de uma tesoura com pequenas estrelas nas laterais">
                     <h3 class="title">Cortes</h3>
                     <p class="subtitle">
-                        A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.
+                        A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes
+                        diferenciados e clássicos.
                     </p>
                 </div>
                 <div class="services-box">
-                    <img src="./res/img/treatment-icon.svg" alt="produtos">
+                    <img src="./res/img/treatment-icon.svg" alt="Ilustração de dois produtos cosmeticos">
                     <h3 class="title">Tratamentos</h3>
                     <p class="subtitle">
-                        O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.
+                        O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo
+                        de cabelo.
                     </p>
                 </div>
             </div>
-      </section>
-      <div class="divider"></div>
-      <section class="testimonials">
+        </section>
+
+        <div class="divider"></div>
+        <!--Testimonials-->
+        <section class="testimonials">
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
             <div class="testimonials-carousel">
                 <div class="testimonial">
-                    <p class="subtitle">" Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
+                    <p class="subtitle">" Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu
+                        cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São
+                        profissionais incríveis e qualificados.
                     </p>
                     <div class="client">
-                        <img src="./res/img/avatar-wanessa.png" alt="avatar">
+                        <img src="./res/img/avatar-wanessa.png" alt="Foto da Wanessa Souza">
                         <p class="subtitle">Wanessa Souza</p>
                     </div>
                 </div>
                 <div class="testimonial">
-                    <p class="subtitle">" Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do Beautysalon.
+                    <p class="subtitle">" Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha
+                        experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo.
+                        Adoro todos os profissionais do Beautysalon.
                     </p>
                     <div class="client">
-                        <img src="./res/img/avatar-luna.png" alt="avatar">
+                        <img src="./res/img/avatar-luna.png" alt="Foto da Luna Falcão">
                         <p class="subtitle">Luna Falcão</p>
                     </div>
                 </div>
@@ -121,37 +143,43 @@
                 <div class="dot"></div>
                 <div class="dot"></div>
             </div>
-      </section>
-      <div class="divider"></div>
-      <section class="contact">
+        </section>
+
+        <div class="divider"></div>
+        <!--Contact-->
+        <section class="contact">
             <div class="contacts-txt">
                 <h2 class="title">Entre em contato com a gente!</h2>
-                <p class="subtitle">Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
-                <button class="btn-primary">
-                    <img src="./res/img/whatsapp-logo.svg" alt="whatsapp-logo"> Entrar em contato
-                </button>
+                <p class="subtitle">Entre em contato com a Beautysalon, queremos tirar suas dúvidas, ouvir suas críticas
+                    e sugestões.</p>
+                <a class="btn-primary">
+                    <img src="./res/img/whatsapp-logo.svg" alt="Logo do Whatsapp (Ilustração de um circulo com um telefone ao meio)"> Entrar em contato
+                </a>
             </div>
             <div class="contacts">
-                <p class="subtitle"><img src="./res/img/phone-icon.svg" alt="Telefone"> 11 99845-6754</p>
-                <p class="subtitle"><img src="./res/img/map-pin-icon.svg" alt="Mapa"> R. Amauri Souza, 346</p>
-                <p class="subtitle"><img src="./res/img/mail-icon.svg" alt="Email"> contato@beautysalon.com</p>
+                <p class="subtitle"><img src="./res/img/phone-icon.svg" alt="Ilustração de um telefone"> 11 99845-6754</p>
+                <p class="subtitle"><img src="./res/img/map-pin-icon.svg" alt="Ilustração de uma marcação em um mapa"> R. Amauri Souza, 346</p>
+                <p class="subtitle"><img src="./res/img/mail-icon.svg" alt="Ilustração de uma carta"> contato@beautysalon.com</p>
             </div>
-      </section>
-      <div class="divider"></div>
+        </section>
+
+        <div class="divider"></div>
     </main>
+    <!--Footer-->
     <footer>
         <div class="footer-txt">
-            <img src="./res/img/logo-footer.svg" alt="logo">
+            <img src="./res/img/logo-footer.svg" alt="logo Beautysalon (Beauty na cor preta e Salon na cor branca)">
             <p class="subtitle subtitle-footer-margin">©2021 Beautysalon.</p>
             <p class="subtitle">Todos os direitos reservados.</p>
         </div>
         <div class="div-social-media">
-            <a href="#"><img src="./res/img/instagram-logo.svg" alt="instagram"></a>
-            <a href="#"><img src="./res/img/facebook-logo.svg" alt="facebook"></a>
-            <a href="#"><img src="./res/img/youtube-logo.svg" alt="youtube"></a>
+            <a href="#"><img src="./res/img/instagram-logo.svg" alt="Logo do Instagram (quadrado com bordas arredondadas com o circulo no meio)"></a>
+            <a href="#"><img src="./res/img/facebook-logo.svg" alt="Logo do Facebook (Ilustração de um f)"></a>
+            <a href="#"><img src="./res/img/youtube-logo.svg" alt="Logo do Youtube (retangulo com bordas arredondadas com um triangulo no meio)"></a>
         </div>
     </footer>
 
     <script src="./index.js"></script>
 </body>
+
 </html>
