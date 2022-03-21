@@ -31,8 +31,8 @@ header{
 
 #nav{
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
   background: var(--first-bg);
   display: flex;
   flex-direction: column;
