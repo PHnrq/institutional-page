@@ -19,3 +19,14 @@ function showMenu(){
         logoMenuBtn.style.flexDirection = 'row'
     }
 }
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+      },
+  });
