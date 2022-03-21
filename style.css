@@ -197,7 +197,7 @@ header{
   padding: 5.8rem 3.2rem;
   
   background: var(--first-bg);
-
+  border-bottom: 4px solid var(--primary-color);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
 }
 
