@@ -24,6 +24,8 @@ header{
   box-sizing: content-box;
   border-bottom: 1px solid var(--light-grey);
   background: var(--first-bg);
+  position: sticky;
+  top: 0;
 }
 
 #nav{
