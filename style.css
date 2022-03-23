@@ -216,7 +216,8 @@ header{
   display: flex;
   gap: 3.2rem;
   flex-direction: column;
-  overflow: unset;
+  overflow: hidden;
+  padding: 0.6rem;
 }
 
 .swiper-slide {
@@ -245,7 +246,6 @@ header{
   flex-direction: column;
   gap: 6.4rem;
   background: var(--second-bg);
-  overflow: hidden;
 }
 
 .testimonial{
@@ -342,4 +342,98 @@ footer{
   display: flex;
   align-items: center;
   gap: 3.2rem;
+}
+
+@media screen and (min-width: 1024px){
+  header{
+    padding: .8rem 12.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #showMenuImg{
+    display: none;
+  }
+
+  #nav{
+    display: flex;
+    position: unset;
+    width: unset;
+    height: unset;
+    background: none;
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+
+  #nav a{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .home{
+    padding: 8.4rem 7.1rem 17.1rem 12.3rem;
+    flex-direction: row;
+  }
+
+  .home-txt{
+    align-items: flex-start;
+  }
+
+  .home-txt .title, .home-txt .subtitle{
+    text-align: start;
+  }
+
+  .home-img, .aboutUs-img{
+    width: 54%;
+  }
+
+  .about-us{
+    padding: 16rem 12.1rem 16rem 0;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .services{
+    align-items: center;
+    padding: 16rem 12.3rem;
+  }
+
+  .services-txt{
+    max-width: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-txt .subtitle{
+    text-align: center;
+  }
+
+  .services-box-wrapper{
+    flex-direction: row;
+  }
+
+  .contact{
+    padding: 16rem 12.3rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 33.3rem;
+  }
+
+  .contacts-txt{
+    width: 339px;
+  }
+
+  .testimonials{
+    padding: 16rem 12.3rem;
+  }
+
+  footer{
+    padding: 6rem 12.3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

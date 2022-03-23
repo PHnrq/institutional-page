@@ -27,6 +27,13 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
     autoplay: {
-        delay: 5000,
-      },
-  });
+        delay: 7000,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        1024: {
+          slidesPerView: 2,
+          setWrapperSize: true,
+        },
+    },
+});
