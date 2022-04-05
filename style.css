@@ -61,6 +61,11 @@ header{
   color: var(--dark);
 }
 
+#nav a:hover{
+  color: var(--primary-color);
+  border-bottom: var(--primary-color) solid 2px;
+}
+
 .showMenuImg{
   width: 2.4rem;
   height: 2.4rem;
@@ -135,6 +140,7 @@ header{
   justify-content: center;
   align-items: center;
   padding: 1.4rem 3.2rem 1.5rem;
+  cursor: pointer;
 
 
   background: var(--primary-color);
@@ -148,6 +154,11 @@ header{
   text-align: center;
 
   color: #F9F9F9;
+}
+
+.btn-primary:hover{
+  filter: brightness(1.1);
+  transition: .5s;
 }
 
 .divider, .divider-invert{
