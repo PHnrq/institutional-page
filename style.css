@@ -260,7 +260,12 @@ header{
 }
 
 .quote{
+  font: 700 4.8rem serif;
+  line-height: 0;
   color: var(--primary-color);
+  position: relative;
+  left: 0px;
+  top: 15px;
 }
 
 .testimonials{
